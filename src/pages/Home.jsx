@@ -1,6 +1,6 @@
 import React from 'react';
 import Hero from '../components/Home/Hero';
-import AboutMe from '../components/Home/AboutMe';
+import About from '../components/Home/About';
 import Footer from '../components/Home/Footer';
 import ContactInfo from '../components/Home/ContactInfo';
 import Experience from '../components/Home/Experience';
@@ -12,37 +12,37 @@ import Navbar from '../components/Home/Navbar';
 
 const Home = () => {
     return (
-        <Container>
-            <VerticalSpace>
-                <Navbar></Navbar>
-            </VerticalSpace>
+        <>
+            <Navbar></Navbar>
 
             <VerticalSpace>
                 <Hero></Hero>
             </VerticalSpace>
 
-            <VerticalSpace>
-                <AboutMe></AboutMe>
-            </VerticalSpace>
+            <Container>
+                <VerticalSpace>
+                    <About></About>
+                </VerticalSpace>
 
-            <VerticalSpace>
-                <Skills></Skills>
-            </VerticalSpace>
+                <VerticalSpace>
+                    <Skills></Skills>
+                </VerticalSpace>
 
-            <VerticalSpace>
-                <Projects></Projects>
-            </VerticalSpace>
+                <VerticalSpace>
+                    <Projects></Projects>
+                </VerticalSpace>
 
-            <VerticalSpace>
-                <Experience></Experience>
-            </VerticalSpace>
+                <VerticalSpace>
+                    <Experience></Experience>
+                </VerticalSpace>
 
-            <VerticalSpace>
-                <ContactInfo></ContactInfo>
-            </VerticalSpace>
+                <VerticalSpace>
+                    <ContactInfo></ContactInfo>
+                </VerticalSpace>
 
-            <Footer></Footer>
-        </Container>
+                <Footer></Footer>
+            </Container>
+        </>
     );
 };
 
