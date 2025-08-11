@@ -5,7 +5,7 @@ const Navbar = () => {
     const components = ['About', 'Skills', 'Projects', 'Experience', 'Contact'];
 
     return (
-        <div className="navbar fixed top-0 left-0 w-full shadow-md xl:px-20 md:px-10 px-4 py-5 bg-base-100 transition-all duration-300 z-50">
+        <div className="navbar bg-gray-50 fixed top-0 left-0 w-full shadow-md xl:px-20 md:px-10 px-4 py-5  transition-all duration-300 z-50">
             <div className="navbar-start min-w-0 flex-shrink">
                 <div className="dropdown lg:hidden">
                     <div

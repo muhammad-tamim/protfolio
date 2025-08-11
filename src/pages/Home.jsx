@@ -15,9 +15,11 @@ const Home = () => {
         <>
             <Navbar></Navbar>
 
-            <VerticalSpace>
-                <Hero></Hero>
-            </VerticalSpace>
+            <Container>
+                <VerticalSpace>
+                    <Hero></Hero>
+                </VerticalSpace>
+            </Container>
 
             <Container>
                 <VerticalSpace>
