@@ -46,7 +46,7 @@ const Skills = () => {
         <Fade duration={3000}>
             <div id="skills">
                 <Heading title="Skills"></Heading>
-                <section id="experience" className="py-16 bg-gray-50 dark:bg-gray-900 dark:text-gray-100">
+                <section className="py-16 bg-gray-50 dark:bg-gray-900 dark:text-gray-100">
                     <div className="max-w-6xl mx-auto px-6">
 
                         <div className="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-6 md:p-8 hover:shadow-xl transition-shadow duration-300">
