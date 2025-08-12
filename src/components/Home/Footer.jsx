@@ -21,7 +21,7 @@ const Footer = () => {
                         GitHub
                     </a>
                     <a
-                        href="https://linkedin.com/in/muhammad-tamim"
+                        href="https://linkedin.com/in/tamim-muhammad"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="hover:text-primary transition"
@@ -30,7 +30,7 @@ const Footer = () => {
                         LinkedIn
                     </a>
                     <a
-                        href="mailto:your.email@example.com"
+                        href="mailto:your.contact2tamim@gmail.com"
                         className="hover:text-primary transition"
                         aria-label="Email"
                     >
