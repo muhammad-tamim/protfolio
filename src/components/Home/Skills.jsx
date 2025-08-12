@@ -47,7 +47,7 @@ const Skills = () => {
     return (
         <section id="skills" className="max-w-6xl mx-auto px-6 py-20">
             <Heading title="Skills" />
-            <div className="space-y-12 mt-10">
+            <div className="">
                 {skillCategories.map((category, index) => (
                     <div key={index}>
                         <h3 className="text-2xl pb-4 font-semibold ">{category.title}:</h3>

@@ -8,7 +8,7 @@ const About = () => {
             <section id="about" className="max-w-5xl mx-auto px-6 py-16">
                 <Heading title="About"></Heading>
 
-                <div className="space-y-8 rounded-2xl shadow-lg p-4 md:p-16  leading-relaxed md:text-lg">
+                <div className="rounded-2xl shadow-lg p-4 md:p-16  leading-relaxed md:text-lg">
                     <p className="">
                         I'm a passionate MERN stack web developer.
                         My programming journey began a few years ago when I first discovered the power of building websites and applications.
