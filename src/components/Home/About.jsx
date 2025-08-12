@@ -4,32 +4,32 @@ import { Fade } from "react-awesome-reveal";
 
 const About = () => {
     return (
-        <Fade>
-            <section id="about" className="max-w-5xl mx-auto px-6 py-16">
-                <Heading title="About"></Heading>
+        <Fade duration={3000}>
+            <div id="about">
+                <Heading title="About ME"></Heading>
+                <section id="experience" className="py-16 bg-gray-50 dark:bg-gray-900 dark:text-gray-100">
+                    <div className="max-w-6xl mx-auto px-6">
 
-                <div className="rounded-2xl shadow-lg p-4 md:p-16  leading-relaxed md:text-lg">
-                    <p className="">
-                        I'm a passionate MERN stack web developer.
-                        My programming journey began a few years ago when I first discovered the power of building websites and applications.
-                        Since then, I have dedicated myself to mastering the full stack, from designing intuitive user interfaces to developing robust backend services.
-                    </p>
+                        <div className="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-6 md:p-8 hover:shadow-xl transition-shadow duration-300">
 
-                    <p className="">
-                        I especially enjoy crafting clean, efficient code and solving real-world problems through technology.
-                        Whether it’s building scalable web apps, experimenting with new frameworks, or optimizing performance, I find great satisfaction in continuous learning and improvement.
-                    </p>
-
-                    <p className="">
-                        Outside of programming, I’m an avid sports enthusiast and love playing football to stay active and clear my mind.
-                        I also have a creative side—I enjoy painting and exploring digital art, which helps me think outside the box and bring fresh ideas to my projects.
-                    </p>
-
-                    <p className="">
-                        Overall, I believe a balanced blend of technical skills and personal passions shapes me into a developer who not only writes code but tells stories and builds experiences that matter.
-                    </p>
-                </div>
-            </section>
+                            <div>
+                                <p className="text-lg leading-relaxed">
+                                    My name is Muhammad Tamim. My journey in programming started after I faced some tough times in life, including dropping out of university and starting a job to support my family. But I never gave up. I taught myself web development, and now I am a confident MERN stack developer.
+                                </p>
+                                <p className="mt-6 text-lg leading-relaxed">
+                                    I love building web apps that solve real problems. Writing clean and efficient code makes me happy. I enjoy learning new technologies and improving my skills every day.
+                                </p>
+                                <p className="mt-6 text-lg leading-relaxed">
+                                    Outside programming, I enjoy playing football to stay active and clear my mind. I also like painting and digital art, which help me think creatively and bring fresh ideas to my work.
+                                </p>
+                                <p className="mt-6 text-lg leading-relaxed font-semibold">
+                                    Overall, I’m a hardworking and focused developer who believes in learning from challenges and growing both personally and professionally.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </Fade>
     );
 };
