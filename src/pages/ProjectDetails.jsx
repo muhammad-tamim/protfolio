@@ -2,6 +2,8 @@ import React from "react";
 import { Link, useParams } from "react-router";
 import Container from "../components/Container/Container";
 import VerticalSpace from "../components/Container/VerticalSpace";
+import { Fade } from "react-awesome-reveal";
+import Heading from "../components/Elements/Heading";
 
 const ProjectDetails = () => {
     const { id } = useParams();
@@ -55,55 +57,68 @@ const ProjectDetails = () => {
     return (
         <Container>
             <VerticalSpace>
-                <section className="px-6 py-10 max-w-4xl mx-auto bg-white shadow-md rounded-lg">
-                    <h1 className="text-3xl font-bold mb-4 text-center">{project.name}</h1>
-                    <div className="space-y-6">
-                        <div className="">
-                            <h2 className="text-xl font-semibold mb-2">Main Technology Stack:</h2>
-                            {project.techStack.map((tech, index) => <span key={index}>{tech}, </span>)}
-                        </div>
+                <Fade duration={3000}>
+                    <div>
+                        <Heading title={project.name}></Heading>
+                        <section id="experience" className="py-16 bg-gray-50 dark:bg-gray-900 dark:text-gray-100">
+                            <div className="max-w-6xl mx-auto px-6">
 
-                        <div className="">
-                            <h2 className="text-xl font-semibold">Description</h2>
-                            <p className="text-gray-700">{project.description}</p>
-                        </div>
+                                <div className="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-6 md:p-8 hover:shadow-xl transition-shadow duration-300">
 
-                        <div>
-                            <h2 className="text-xl font-semibold">Challenges Faced</h2>
-                            <p className="text-gray-700">{project.challenges}</p>
-                        </div>
+                                    <div>
+                                        <div className="space-y-6">
+                                            <div className="">
+                                                <h2 className="text-xl font-semibold mb-2">Main Technology Stack:</h2>
+                                                {project.techStack.map((tech, index) => <span key={index}>{tech}, </span>)}
+                                            </div>
 
-                        <div>
-                            <h2 className="text-xl font-semibold">Potential Improvements</h2>
-                            <p className="text-gray-700">{project.improvements}</p>
-                        </div>
-                        <div className=" flex justify-center gap-4">
-                            <a
-                                href={project.liveLink}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="btn btn-primary"
-                            >
-                                Live Project
-                            </a>
-                            <a
-                                href={project.githubLink}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="btn btn-outline btn-primary"
-                            >
-                                GitHub (Client)
-                            </a>
-                        </div>
-                        <div>
-                            <Link to='/'>
-                                <button className="btn btn-primary w-full">Back to Home</button>
-                            </Link>
-                        </div>
-                    </div>
-                </section>
+                                            <div className="">
+                                                <h2 className="text-xl font-semibold">Description</h2>
+                                                <p className="text-gray-700">{project.description}</p>
+                                            </div>
+
+                                            <div>
+                                                <h2 className="text-xl font-semibold">Challenges Faced</h2>
+                                                <p className="text-gray-700">{project.challenges}</p>
+                                            </div>
+
+                                            <div>
+                                                <h2 className="text-xl font-semibold">Potential Improvements</h2>
+                                                <p className="text-gray-700">{project.improvements}</p>
+                                            </div>
+                                            <div className=" flex justify-center gap-4">
+                                                <a
+                                                    href={project.liveLink}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="btn btn-outline btn-primary"
+                                                >
+                                                    Live Project
+                                                </a>
+                                                <a
+                                                    href={project.githubLink}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="btn btn-outline btn-primary"
+                                                >
+                                                    GitHub (Client)
+                                                </a>
+                                            </div>
+                                            <div className="text-center">
+                                                <Link to='/'>
+                                                    <button className="btn btn-primary ">Back to Home</button>
+                                                </Link>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section >
+                    </div >
+                </Fade >
+
             </VerticalSpace>
-        </Container>
+        </Container >
 
     );
 };
