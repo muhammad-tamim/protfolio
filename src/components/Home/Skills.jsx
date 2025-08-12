@@ -2,13 +2,11 @@ import React from "react";
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGitAlt } from "react-icons/fa";
 import {
     SiTailwindcss, SiMongodb, SiExpress, SiFigma, SiGithub,
-    SiNextdotjs, SiNpm, SiPnpm, SiTypescript, SiPostgresql,
-    SiMysql, SiDocker, SiVercel, SiAstro, SiEslint,
-    SiDaisyui,
-    SiReactquery
+    SiNpm, SiVercel, SiDaisyui,
 } from "react-icons/si";
 import Heading from "../Elements/Heading";
 import { DiFirebase } from "react-icons/di";
+import { Fade } from "react-awesome-reveal";
 
 const Skills = () => {
     const skillCategories = [
@@ -45,27 +43,37 @@ const Skills = () => {
     ];
 
     return (
-        <section id="skills" className="max-w-6xl mx-auto px-6 py-20">
-            <Heading title="Skills" />
-            <div className="">
-                {skillCategories.map((category, index) => (
-                    <div key={index}>
-                        <h3 className="text-2xl pb-4 font-semibold ">{category.title}:</h3>
-                        <div className="flex flex-wrap gap-4">
-                            {category.skills.map((skill, idx) => (
-                                <div
-                                    key={idx}
-                                    className="flex items-center gap-2 px-4 py-2 bg-gray-200 btn btn-ghost rounded-lg shadow-sm hover:shadow-md transition-all cursor-pointer"
-                                >
-                                    <span className="text-xl">{skill.icon}</span>
-                                    <span className="text-sm font-medium">{skill.name}</span>
-                                </div>
-                            ))}
+        <Fade duration={3000}>
+            <div id="skills">
+                <Heading title="Skills"></Heading>
+                <section id="experience" className="py-16 bg-gray-50 dark:bg-gray-900 dark:text-gray-100">
+                    <div className="max-w-6xl mx-auto px-6">
+
+                        <div className="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-6 md:p-8 hover:shadow-xl transition-shadow duration-300">
+
+                            <div>
+                                {skillCategories.map((category, index) => (
+                                    <div key={index}>
+                                        {/* <h3 className="text-2xl pb-4 font-semibold text-center my-4">{category.title}:</h3> */}
+                                        <div className="flex flex-wrap gap-4 my-10 ">
+                                            {category.skills.map((skill, idx) => (
+                                                <div
+                                                    key={idx}
+                                                    className="flex items-center mx-auto justify-center text-center gap-2 px-4 py-2 bg-gray-200 btn btn-ghost rounded-lg shadow-sm hover:shadow-md transition-all cursor-pointer"
+                                                >
+                                                    <span className="text-xl">{skill.icon}</span>
+                                                    <span className="text-sm font-medium">{skill.name}</span>
+                                                </div>
+                                            ))}
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
                         </div>
                     </div>
-                ))}
+                </section>
             </div>
-        </section>
+        </Fade>
     );
 };
 
