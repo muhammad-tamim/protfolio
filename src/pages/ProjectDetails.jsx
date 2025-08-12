@@ -60,10 +60,10 @@ const ProjectDetails = () => {
                 <Fade duration={3000}>
                     <div>
                         <Heading title={project.name}></Heading>
-                        <section id="experience" className="py-16 bg-gray-50 dark:bg-gray-900 dark:text-gray-100">
+                        <section id="experience" className="py-16 bg-gray-50">
                             <div className="max-w-6xl mx-auto px-6">
 
-                                <div className="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-6 md:p-8 hover:shadow-xl transition-shadow duration-300">
+                                <div className="bg-white  shadow-lg rounded-2xl p-6 md:p-8 hover:shadow-xl transition-shadow duration-300">
 
                                     <div>
                                         <div className="space-y-6">

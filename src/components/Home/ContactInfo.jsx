@@ -8,7 +8,7 @@ const ContactInfo = () => {
         <Fade duration={3000}>
             <div id="contact">
                 <Heading title="Contact WIth ME"></Heading>
-                <section className="py-16 bg-gray-50 dark:bg-gray-900 dark:text-gray-100">
+                <section className="py-16 bg-gray-50 ">
                     <div className="max-w-6xl mx-auto px-6">
 
                         <div >

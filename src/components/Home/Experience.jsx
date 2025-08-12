@@ -16,25 +16,25 @@ const Experience = () => {
     return (
         <Fade duration={3000}>
             <div id="experience">
-                <Heading title="About ME"></Heading>
-                <section className="py-16 bg-gray-50 dark:bg-gray-900 dark:text-gray-100">
+                <Heading title="Experience"></Heading>
+                <section className="py-16 bg-gray-50">
                     <div className="max-w-6xl mx-auto px-6">
 
-                        <div className="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-6 md:p-8 hover:shadow-xl transition-shadow duration-300">
+                        <div className="bg-white shadow-lg rounded-2xl p-6 md:p-8 hover:shadow-xl transition-shadow duration-300">
 
-                            <div className="flex flex-col md:flex-row md:items-center md:justify-between border-b border-gray-200 dark:border-gray-700 pb-4 mb-4">
+                            <div className="flex flex-col md:flex-row md:items-center md:justify-between border-b border-gray-200  pb-4 mb-4">
                                 <div className="flex items-center gap-3">
                                     <div className="bg-primary text-white p-3 rounded-full">
                                         <MdWork size={24} />
                                     </div>
                                     <div>
                                         <h3 className="text-xl font-semibold">Team Member</h3>
-                                        <p className="text-gray-600 dark:text-gray-400 font-medium">
+                                        <p className="text-gray-600 font-medium">
                                             Chatime · Full-time
                                         </p>
                                     </div>
                                 </div>
-                                <div className="mt-3 md:mt-0 flex flex-wrap gap-4 text-sm text-gray-500 dark:text-gray-400">
+                                <div className="mt-3 md:mt-0 flex flex-wrap gap-4 text-sm text-gray-500 ">
                                     <span className="flex items-center gap-1">
                                         <FaCalendarAlt /> Oct 2023 – Aug 2024 · 11 mos
                                     </span>
