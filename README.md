@@ -7,7 +7,7 @@ This website showcases my skills, projects, experience, and contact information 
 
 ## Live Link: 
 
-https://protfolio-seven-virid.vercel.app/
+https://muhammad-tamim.vercel.app/
 
 ## Table of Contents
 
